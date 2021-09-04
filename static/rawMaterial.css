@@ -1,0 +1,78 @@
+body
+{
+    background-image: linear-gradient(to right, #bc958e, #c5a49a, #cdb4a7, #d6c4b7, #dfd3c7); 
+}
+
+
+
+.form-group
+{
+    width: 30%;
+    display: inline-block;
+    /* margin-top: 50px;
+    padding-bottom: 50px; */
+margin-right: 75px;
+
+    
+   
+}
+
+
+
+.container-fluid
+{
+   background-color:blueviolet ;
+  width: 90%;
+  height: 70%;
+  border-radius: 10px;
+  background-image: linear-gradient(to left, #3c3734, #443e3b, #4b4541, #534c48, #5b534f);
+  text-align: center;
+  position: relative;
+  top: 75px;
+  box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  
+   
+   /* padding: 5%; */
+   /* margin: 5%; */
+   /* margin-right: 5%; */
+}
+
+form
+{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 50px;
+    
+    
+
+}
+
+label
+{
+    color: #FBFBDD;
+    font-family: montserrat;
+}
+
+input
+{
+    margin-right: 10%;
+    margin: 5%;
+
+}
+
+label
+{
+    font-size: 1.5rem;
+
+}
+
+.btn
+{
+    background-color: #8B5E58;
+    color: whitesmoke;
+    width: 100px;
+    font-family: montserrat;
+}

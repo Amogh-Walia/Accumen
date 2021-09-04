@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raw Materials</title>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="rawMaterial.css">
+
+    <!--font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+<!-- js script -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="#">LOGO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Tools
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Tool 1</a>
+                <a class="dropdown-item" href="#">Tool 2</a>
+                <a class="dropdown-item" href="#">Tool 3</a>
+              </div>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <h1 style="text-align: center; font-family: montserrat; font-weight: bolder; color: #3c3734; ">RAW MATERIALS</h1>
+      
+      <div class="container-fluid">
+        
+        <!-- <h1 style="text-align: center;">RAW MATERIALS</h1> -->
+        <form>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Name</label>
+            <input style="background-color: #FBFBDD;" type="text" class="form-control" id="exampleInputPassword1" placeholder="Name of the material">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Cost</label>
+            <input style="background-color: #FBFBDD;" type="text" class="form-control" id="exampleInputPassword1" placeholder="Cost of the material">
+          </div>
+          <!-- <div class="form-group">
+            <label for="exampleInputPassword1">Material ID</label>
+            <input style="background-color: #FBFBDD;" type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Material ID">
+          </div> -->
+          <div class="form-group">
+            <label for="exampleInputEmail1">Units Required</label>
+            <input style="background-color: #FBFBDD;"   type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Units required">
+            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+          </div>
+          <!-- <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div> -->
+          <br>
+          <button type="submit" class="btn">Add</button>
+        </form>
+    
+    
+    
+    </div>
+    
+</body>
+</html>
