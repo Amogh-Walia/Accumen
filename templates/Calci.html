@@ -1,30 +1,105 @@
 <html>
-<body>	
-          <form
+	
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles(Arshia).css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		
+		 
+		<title>
+			Add New Product
+		</title> 
+		 
+	</head>
+<body style="background: rgb(238,234,222);
+background: linear-gradient(90deg, rgba(238,234,222,1) 0%, rgba(219,202,192,1) 0%, rgba(190,155,147,1) 0%, rgba(185,146,139,1) 0%, rgba(238,234,222,1) 100%); text-align: center;">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">LOGO</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		  <ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item px-2">
+			  <a class="nav-link" href="#">Pricing</a>
+			</li>
+			<li class="nav-item dropdown px-2">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			   Tools
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="#">Tool 1</a>
+				<a class="dropdown-item" href="#">Tool 2</a>
+				<a class="dropdown-item" href="#">Tool 3</a>
+			  </div>
+			</li>
+			<li class="nav-item px-2">
+			  <a class="nav-link" style="background-color: #eeeade; border-radius: 7px;" href="#">About Us</a>
+			</li>
+		  </ul>
+		</div>
+	  </nav>
+	
+<div class="container-fluid" style=" background-image: linear-gradient(to left, #3c3734, #443e3b, #4b4541, #534c48, #5b534f); padding: 5%; width: 60%;border-radius: 10px; box-shadow: 5px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin-top: 60px;">
+
+	<div class="row">
+		<div class="col">
+		<form
             action="{{ url_for('calculate') }}"
             method="POST"
             id="form1"
           >		
-<p>Enter Budget:</p>
+<p style="color: #eeeade; font-family: montserrat;">Enter Budget:</p>
 
 		
 <p><input type = "number" name = "budget" /></p>
 
-<p>Enter Hours You have:</p>
+<p style="color: #eeeade; font-family: montserrat;">Enter Hours You have:</p>
 
 		
-<p><input type = "numbert" name = "hours" /></p>
+<p><input type = "number" name = "hours" /></p>
+
+<p><button class="btn btn-md" style=" background-color: #8B5E58;
+    color: whitesmoke;
+    width: 100px;
+    font-family: montserrat;">submit</button></p>
 
 
-<p><input type = "submit" value = "submit" /></p>
+</div>
 
-	</form>	
+<div class="col" style="color: #eeeade;">
 	{% if Payload %}
 	{% for i in Payload[0]%}
 	<p>make {{Payload[0][i]}} units of {{i}}</p>
 	{%endfor%}
 	<p> to make rupees {{Payload[1]}} sale</p>
 	{%endif%}
+</div>
+
+
+	</div>
+          
+
+
+
+
+	</form>
+	
+</div>
+	
 </body>
 </html>
 

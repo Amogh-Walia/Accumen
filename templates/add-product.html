@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/styles(Arshia).css">
+    <link rel="stylesheet" href="styles(Arshia).css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
      
     <title>
         Add New Product
@@ -55,46 +58,41 @@ background: linear-gradient(90deg, rgba(238,234,222,1) 0%, rgba(219,202,192,1) 0
     <div class="AddProduct row justify-content-center">
         <div class="col-4">
             <br><br>
-          <p class="heading" style="font-size: 1.7rem; color: cornsilk; font-weight: 600;">
+          <p class="heading" style="font-size: 2rem; color: cornsilk; font-weight: 600;">
               Add Product
           </p>
-          <form>
-            <div class="form-group mb-3">
+          <p class="heading" style="font-size: 1.1rem; color: cornsilk; font-weight: 100;">
+            {{msg}}
+          </p>
+                    <form
+            action="{{ url_for('add_product') }}"
+            method="POST"
+            id="form1"
+          >
+            <div style="text-align: center;" class="form-group mb-2">
                 <label class="new-pro-form heading2" for="name">Product Name
                 </label>
                 <input id="name" name="name" type="text" class=" new-pro-form-boxes form-control validate" required="">
               </div>
-          <div class="form-group mb-3">
-          </div>
-          <div class="form-group mb-3 col-xs-12 col-sm-6">
+          <div class="form-group mb-2" style="text-align: center;">
             <label class="new-pro-form heading2" for="stock">Labour Hours
             </label>
             <input id="hours" name="hours" type="text" class=" new-pro-form-boxes form-control validate" required="">
-          </div>      
-        </div>
-
-        <div class="col-4">
-            <br><br><br><br><br><br>
-            <div class="form-group mb-3 col-xs-12 col-sm-6" style="margin-left: 50%;">
                 <label class="new-pro-form heading2" for="stock">Maximum Retail Price
                 </label>
                 <input id="mrp" name="mrp" type="text" class=" new-pro-form-boxes form-control validate" required="">
-              </div>
-              <br><br>
-              <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;" multiple></p>
+                 <button class="btn btn-lg" style="margin-top: 70px;  background-color: #8B5E58; color: #eeeade; font-family: montserrat;" type="submit">Add Product</button>
 
-              <p><img id="/static/output" width="140%" /></p>
+          </div>  
 
-<script>
-var loadFile = function(event) {
-	var image = document.getElementById('output');
-	image.src = URL.createObjectURL(event.target.files[0]);
-};
-</script>
+        </div>
+
+
+
+
     </div>
     <div class="row">
         <div class="col-md-4 offset-md-3">    
-             <a class="btn btn-primary" href="#" role="button" style="color: #eeeade ; background-color: #8b5f57; border:none; border-radius:0%; width: 150%; padding: 4%;">NEXT</a>
              <br><br><br>
              </div>
             

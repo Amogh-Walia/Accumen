@@ -47,31 +47,30 @@ admin/product list
 </nav>          <br><br>
 
          <p class="heading" style="font-size: 1.8rem; padding-left: 5%;">
-          Products Currently Manufactured 
+          Products Currently Listed
          </p>          
          <br>
 
-          <table class="admin-pro-table table-borderless table table-dark table-striped tables  ">
+          <table style="margin-left: 200px; width: 70%; border-radius: 10px; text-align: center;" class="admin-pro-table table-borderless table table-dark table-striped tables  " >
             <thead class="table-dark">
                 <tr>
-                  <th class="heading table-heading" scope="col">S. No.</th>
                   <th class="heading table-heading" scope="col">Product Name</th>
-                  <th class="heading table-heading" scope="col">Units Made</th>
-                  <th class="heading table-heading" scope="col">In Stock</th>
-                  <th class="heading table-heading" scope="col">Price</th>
-                  <th class="heading table-heading" scope="col">Cost</th>         
+                  <th class="heading table-heading" scope="col">MRP</th>
+                  <th class="heading table-heading" scope="col">Hours Req.</th>
+                  <th class="heading table-heading" scope="col">Raw Materials</th>
+
                 </tr>
               </thead>
               <tbody>
+                {%  for x in data  %}
                 <tr>
-                  <th scope="row">1</th>
-                  <td><a class="product-name-links" href="productDisplayPage.html">Jacob</a></td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                </tr>
+                  <td>{{x[1]}}</td>
+                  <td>{{x[2]}} Rs</td>
+                  <td>{{x[3]}} hours</td>
+                  <td style="width: 15%;"><a href="/ProductDeet/{{x[0]}}">Details</a></td>
 
+                </tr>
+{%endfor%}
               </tbody>
             </table>
             <br><br>
