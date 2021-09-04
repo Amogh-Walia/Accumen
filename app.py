@@ -12,7 +12,8 @@ createTemplate("templates/partials", flask=True)
 
 load = ''
 loaded = 0
-
+global loggedIn
+loggedIn = False
 
 def setPayload(payload):
     global load
@@ -41,7 +42,12 @@ def login_page():
         "to": "login",
         "identifier": "email"
     }
-    return render_template("login.html", sawo=sawo, load=load)
+    print(loggedIn)
+    if loggedIn:
+        return render_template("dashboard.html")
+
+    else:
+        return render_template("login.html", sawo=sawo, load=load)
 
 
 
@@ -49,7 +55,6 @@ def login_page():
 
 @app.route("/login", methods=["POST", "GET"])
 def login():
-    print((request.data))
 
     payload = json.loads(request.data)["payload"]
     setLoaded(True)
@@ -57,10 +62,24 @@ def login():
     if(verifyToken(payload)):
         print("Logged in")
         status = 200
+        global loggedIn
+        loggedIn = True
+        print(loggedIn)
+
     else:
         print("Failed login")
         status = 404
     return {"status": status}
+@app.route("/data_entry", methods=["POST", "GET"])
+def data_entry():
+    return render_template("dataEntryPage.html")
+
+
+@app.route("/add_product", methods=["POST", "GET"])
+def add_product():
+    return render_template("add-product.html")
+
+
 @app.route("/calculate", methods=["POST", "GET"])
 def calculate():
     Payload = {}  
