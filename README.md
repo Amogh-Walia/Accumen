@@ -1,6 +1,10 @@
 # Acumen
 
-#This project comes under the FIN-TECH Domain.
+This project comes under the FIN-TECH Domain.
+
+Link to the video demo: https://www.youtube.com/watch?v=i6rusillOas&feature=youtu.be
+
+
 
 Our project aims at maximising profits for product-manufacturers, by providing the most cost-effective way of production.
 Details of various products the manufacturer makes are taken- cost, labour hours and raw materials required.
