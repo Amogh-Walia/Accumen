@@ -1,5 +1,5 @@
 # Acumen
-
+This project comes under the FIN-TECH Domain
 Our project aims at maximising profits for product-manufacturers, by providing the most cost-effective way of production.
 Details of various products the manufacturer makes are taken- cost, labour hours and raw materials required.
 Using the entered information, the algorithm provides the best possible combination and number of products to be manufactured.
