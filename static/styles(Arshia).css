@@ -42,9 +42,10 @@ p{
 
 
 .AddProduct{
+    width: 75%;
     background-color: #1b1b1bd0;
     margin: 7% !important;
-    border-radius: 28px;
+    border-radius: 60px;
     box-shadow: 1px 1px 16px 1px rgba(65, 65, 65, 0.8);
   -webkit-box-shadow: 1px 1px 16px 1px rgba(65, 65, 65, 0.8);
   -moz-box-shadow: 1px 1px 16px 1px rgba(65, 65, 65, 0.8);

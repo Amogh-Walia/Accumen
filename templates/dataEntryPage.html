@@ -51,13 +51,13 @@ admin/product list
          </p>          
          <br>
 
-          <table style="margin-left: 200px; width: 70%; border-radius: 10px; text-align: center;" class="admin-pro-table table-borderless table table-dark table-striped tables  " >
+          <table class="admin-pro-table table-borderless table table-dark table-striped tables  " >
             <thead class="table-dark">
                 <tr>
                   <th class="heading table-heading" scope="col">Product Name</th>
                   <th class="heading table-heading" scope="col">MRP</th>
                   <th class="heading table-heading" scope="col">Hours Req.</th>
-                  <th class="heading table-heading" scope="col">Raw Materials</th>
+                  <th class="heading table-heading" scope="col">View Raw Materials</th>
 
                 </tr>
               </thead>
@@ -67,7 +67,7 @@ admin/product list
                   <td>{{x[1]}}</td>
                   <td>{{x[2]}} Rs</td>
                   <td>{{x[3]}} hours</td>
-                  <td style="width: 15%;"><a href="/ProductDeet/{{x[0]}}">Details</a></td>
+                  <td><a href="/ProductDeet/{{x[0]}}">Details</a></td>
 
                 </tr>
 {%endfor%}

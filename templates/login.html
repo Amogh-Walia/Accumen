@@ -9,7 +9,7 @@
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">    
+    <link rel="stylesheet" href="/static/styles.css">
 
     <!--font  -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
 <body>
 
     <!--navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="#">LOGO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item px-2">
               <a class="nav-link" href="#">Pricing</a>
@@ -64,7 +64,7 @@
                 <div class="row d-flex px-lg-4 px-3 pt-3">
                     <h6 id="logo"><strong>Logo</strong></h6>
                 </div>
-    <div class="container d-flex justify-content-center align-middle">
+     <div class="container d-flex justify-content-center align-middle">
       <div class="row login-container">
         <div class="col-12 p-4 h2 text-center text-Success">
           <h1 class="fs-1 fw-bold font-monoscape text-primary">Login</h1>
@@ -81,14 +81,29 @@
         {% endif %}
       </div>
     </div>
-                <div class="bottom text-center mb-3"> <a href="Register.html" class="sm-text mx-auto mb-3">Don't have an Account yet ?</a> </div>
             </div>
             <div class="card card2">
             <div class="card2-text">
-                <h1 class="company-name">COMPANY NAME</h1>
+              <div class="row">
+                <div class="col">
+                <h1 class="company-name">Acumen</h1>
+              </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
                 <p>
-                    <h3 class="company-moto">Company Moto</h3>
+                    <h3 class="company-moto">Our tool, Your Profit</h3>
                 </p>
+              </div>
+              </div>
+
+              <div class="row">
+                <div class="col" id="logo">
+                
+                <img class="logo" src="file:///C:/Users/Shubham%20Sinha/Documents/GitHub/Nova_inc/homepage-pic.png" alt="Logo">
+              </div>
+              </div>
             </div>    
             
             </div>

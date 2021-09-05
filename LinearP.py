@@ -1,6 +1,8 @@
 import pulp as p
 
-# Generate a New LP Maximization Problem:
+def Str_To_Dic(string):
+    Re = dict(subString.split(" = ") for subString in string.split(";"))
+    return Re
 
 #GENERATE CLASSES
 global Products
@@ -39,6 +41,7 @@ def Solve(Budget,Hours):
 
     chair = Product("Chair","Wood = 5;Nails = 10",12,45)
     table = Product("Table","Wood = 10;Nails = 7",7,50)
+    almirah = Product("Almirah","Wood = 100000;Nails = 700000",10000,50)
 
 
     
